@@ -251,3 +251,18 @@
   new PureCounter();
 
 })()
+
+//Navbar mypic image hide while on other nav links except Home
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   document.getElementById("mypic-link")
+//   const navLinkToSelect = document.querySelector('a.nav-link[href="#about"]');
+
+//   // Check if the nav link is found
+//   if (navLinkToSelect) {
+//     // Modify the style of the selected nav link
+//     mypicLink.style.display = 'block'; // Show the mypic image
+//       } else {
+//         mypicLink.style.display = 'none'; // Hide the mypic image for other sections
+//       }
+// });

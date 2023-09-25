@@ -21,6 +21,15 @@ body::before {
   z-index: -1;
 }
 
+.mypic {
+  display: none;
+}
+
+.navbar .nav-link .active {
+  display: block;
+}
+
+
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
