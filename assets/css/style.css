@@ -250,8 +250,8 @@ h6 {
   left: 0;
   background-color: #18d26e;
   visibility: hidden;
-  width: 0px;
-  transition: all 0.3s ease-in-out 0s;
+  width: 70px;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .navbar a:hover:before,
@@ -1189,3 +1189,41 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+/*Media query*/
+.device-size-display {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+  margin-top: 100px;
+}
+
+@media (min-width: 576px) {
+  #device-size::before {
+    content: 'XS / SM';
+  }
+}
+
+@media (min-width: 768px) {
+  #device-size::before {
+    content: 'MD';
+  }
+}
+
+@media (min-width: 992px) {
+  #device-size::before {
+    content: 'LG';
+  }
+}
+
+@media (min-width: 1200px) {
+  #device-size::before {
+    content: 'XL';
+  }
+}
+

@@ -66,6 +66,7 @@
       let header = select('#header')
       let sections = select('section', true)
       let navlinks = select('#navbar .nav-link', true)
+      // let headerimg = document.getElementById("headerimg");
 
       navlinks.forEach((item) => {
         item.classList.remove('active')
@@ -82,6 +83,7 @@
 
       if (this.hash == '#header') {
         header.classList.remove('header-top')
+        // headerimg.style.display = 'none'; // show image
         sections.forEach((item) => {
           item.classList.remove('section-show')
         })
@@ -90,6 +92,7 @@
 
       if (!header.classList.contains('header-top')) {
         header.classList.add('header-top')
+        // headerimg.style.display = 'block';  // Hide the image
         setTimeout(function() {
           sections.forEach((item) => {
             item.classList.remove('section-show')
@@ -98,6 +101,7 @@
 
         }, 350);
       } else {
+        // headerimg.style.display = 'block';  // Hide the image
         sections.forEach((item) => {
           item.classList.remove('section-show')
         })
