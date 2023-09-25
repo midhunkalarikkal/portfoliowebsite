@@ -1,6 +1,19 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+/*Hiding scrollbar without its removing its function*/
+/* Hide scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: only hide scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
