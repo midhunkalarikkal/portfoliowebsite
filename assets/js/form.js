@@ -14,3 +14,8 @@ $("#submit-form").submit((e)=>{
         }
     })
 })
+
+function validateInput() {
+    var input = document.getElementById("name");
+    input.value = input.value.replace(/[^a-zA-Z]/g, '');
+  }
